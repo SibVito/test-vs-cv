@@ -1,0 +1,64 @@
+body {
+   margin: 15px;
+}
+
+p{
+   color: rgb(33, 131, 115);
+}
+
+.main-paragraph{
+   color: blueviolet;
+}
+
+#special-prg{
+   color: blue;
+}
+
+.paragraph {
+   width: 300px;
+   height: 100px;
+   padding: 20px;
+   margin: 10px;
+   border: 2px solid black;
+   color: blue;
+}
+
+.special{ /*приоритет выше у одной специфичности выше(каскады) или можно .special.paragraph и сверху*/
+   color: brown;
+}
+
+.list{
+   background-color: bisque;
+   border: 1px solid black;
+   color: black;
+   padding: 5px;
+}
+
+.listItem{
+   font-size: large;
+}
+
+.list .listItem{
+   color: orange;
+}
+
+.listItem:last-child{
+   color:purple
+}
+
+.main{
+   width: 50%;
+}
+
+.image{
+   /*width: 500px;
+   height: 100px;*/
+   width: 100%
+}
+
+.coolImage{
+   width: 50px;
+   height: 50px;
+   background: no-repeat center url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFZIKL_TqWWp_RObkLYu6xzvzAzK_xbh3JSw&usqp=CAU);
+   background-size: contain;
+}
